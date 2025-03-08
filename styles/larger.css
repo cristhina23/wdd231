@@ -145,7 +145,10 @@ h2 {
   padding: 10px;
   color: #1bdfd5;
 }
-
+.name {
+  background-color: transparent;
+  color: #222831;
+}
 .card img {
   max-width: 100%;
   border-radius: 5px;
@@ -235,7 +238,7 @@ footer {
     #48b1bf,
     #06beb6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  color: #222831;
   text-align: center;
   padding: 10px;
   width: 100%;
