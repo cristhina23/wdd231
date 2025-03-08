@@ -1,0 +1,86 @@
+@media (max-width: 768px) {  
+  
+  .logo {
+    height: 100px;
+  }
+
+  .container-header .bottom {
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+  nav ul li a {
+    font-size: 14px;
+    padding: 5px;
+  }
+  main {
+    margin-top: 0;
+  }
+  main .home {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .top {
+    position: relative;
+  }
+  .top .menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  .top .icon {
+    transition: all 0.3s ease-in-out;
+  }
+  .top .icon:hover {
+    border: 1px solid #222831;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .certificate .filters {
+    display: flex;
+    width: 100%;
+  }
+
+  .certificate .filters button {
+    width: 100%;
+  }
+
+  
+  .certificate .courses  {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+ 
+  .aside {
+    order: 2; 
+    border-left: none;
+    border-top: 2px solid #ccc;
+  }
+}
