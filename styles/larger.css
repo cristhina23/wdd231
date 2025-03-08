@@ -14,17 +14,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: #06beb6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #48b1bf,
-    #06beb6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #48b1bf,
-    #06beb6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
 .image-logo {
@@ -52,6 +41,17 @@ header {
   width: 100%;
   justify-content: center;
   padding: 10px;
+  background: #06beb6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .bottom {
   width: 100%;
@@ -81,7 +81,12 @@ nav ul li {
 nav ul li:hover {
   transform: scale(1.1);
   color: #06beb6;
-  border-bottom: 2px solid #06beb6;
+  text-decoration: underline;
+}
+.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #06beb6;
 }
 .menu {
   display: none;
@@ -182,6 +187,7 @@ h2 {
 
 .courses {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 20px;
@@ -190,7 +196,7 @@ h2 {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.courses button {
+.completed {
   background-color: #222831;
   color: #1bdfd5;
   border: none;
@@ -201,23 +207,28 @@ h2 {
   transition: all 0.3s ease-in-out;
   font-weight: bold;
 }
-.courses button:nth-child(4),
-.courses button:nth-child(6) {
-  background-color: #e5eced;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  color: #222831;
-  transition: all 0.3s ease-in-out;
-}
-.courses button:nth-child(4):hover,
-.courses button:nth-child(6):hover {
-  background-color: #c7cecf;
-}
 
-.courses button:hover {
+.completed:hover {
   background-color: #2d3541;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
+.not {
+  background-color: #e5eced;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #222831;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.not:hover {
+  background-color: #c7cecf;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+
 
 .aside {
   flex: 1;
