@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Restaurante Sabor Peruano",
+    "address": "Av. Los Héroes 123, Villa El Salvador, Lima",
+    "phone": "+51 987 654 321",
+    "website": "https://www.saborperuano.com",
+    "image": "images/saborperuano.jpg",
+    "membership": "Gold",
+    "email": "contacto@saborperuano.com"
+  },
+  {
+    "name": "Textiles Andinos",
+    "address": "Jr. Comercio 456, San Juan de Miraflores, Lima",
+    "phone": "+51 956 123 789",
+    "website": "https://www.textilesandinos.pe",
+    "image": "images/textilesandinos.jpg",
+    "membership": "Silver",
+    "email": "ventas@textilesandinos.pe"
+  },
+  {
+    "name": "Consultora Empresarial Lima Sur",
+    "address": "Av. Lima Sur 789, Villa María del Triunfo, Lima",
+    "phone": "+51 912 345 678",
+    "website": "https://www.consultoralimasur.com",
+    "image": "images/consultoralimasur.jpg",
+    "membership": "Bronze",
+    "email": "info@consultoralimasur.com"
+  },
+  {
+    "name": "AgroExport Perú",
+    "address": "Av. Panamericana Sur Km 20, Lurín, Lima",
+    "phone": "+51 923 456 789",
+    "website": "https://www.agroexportperu.com",
+    "image": "images/agroexportperu.jpg",
+    "membership": "Gold",
+    "email": "exportaciones@agroexportperu.com"
+  },
+  {
+    "name": "Academia de Inglés Global",
+    "address": "Calle Progreso 222, Chorrillos, Lima",
+    "phone": "+51 901 234 567",
+    "website": "https://www.globalenglish.pe",
+    "image": "images/globalenglish.jpg",
+    "membership": "Silver",
+    "email": "admisiones@globalenglish.pe"
+  },
+  {
+    "name": "Clinica Dental Sonrisa Feliz",
+    "address": "Av. Central 555, Villa El Salvador, Lima",
+    "phone": "+51 988 765 432",
+    "website": "https://www.sonrisafeliz.pe",
+    "image": "images/sonrisafeliz.jpg",
+    "membership": "Bronze",
+    "email": "citas@sonrisafeliz.pe"
+  },
+  {
+    "name": "Gimnasio Fuerza Total",
+    "address": "Av. Revolución 111, San Juan de Miraflores, Lima",
+    "phone": "+51 987 123 456",
+    "website": "https://www.fuerzatotalgym.com",
+    "image": "images/fuerzatotal.jpg",
+    "membership": "Gold",
+    "email": "info@fuerzatotalgym.com"
+  }
+]
