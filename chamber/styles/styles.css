@@ -12,6 +12,7 @@
 }
 body {
   font-family: var(--body-font);
+  font-display: swap;
   line-height: 1.5;
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -94,6 +95,10 @@ nav ul li a:hover {
   color: var(--lila);
   text-align: center;
   }
+
+  button {
+    cursor: pointer;
+  }
 .a {
   text-decoration: none;
   color: var(--lila);
@@ -155,6 +160,11 @@ nav ul li a:hover {
   color: var(--primary-color);
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 .grid{
   display: grid;
@@ -279,84 +289,3 @@ footer {
   transform: scale(1.1);
 }
 
-/*
-<section class="cards-container list none" id="members-container-list" >
-          <div class="card-list">
-            <div class="card-list-info">
-              <p>Name</p>
-              <p>Address</p>
-              <p>Phone</p>
-              <a href="#">Website</a>
-            </div>
-            <div>
-              <p>Membership</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <div class="card-list-info">
-              <p>Name</p>
-              <p>Address</p>
-              <p>Phone</p>
-              <a href="#">Website</a>
-            </div>
-            <div>
-              <p>Membership</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <div class="card-list-info">
-              <p>Name</p>
-              <p>Address</p>
-              <p>Phone</p>
-              <a href="#">Website</a>
-            </div>
-            <div>
-              <p>Membership</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <div class="card-list-info">
-              <p>Name</p>
-              <p>Address</p>
-              <p>Phone</p>
-              <a href="#">Website</a>
-            </div>
-            <div>
-              <p>Membership</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <div class="card-list-info">
-              <p>Name</p>
-              <p>Address</p>
-              <p>Phone</p>
-              <a href="#">Website</a>
-            </div>
-            <div>
-              <p>Membership</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <div class="card-list-info">
-              <p>Name</p>
-              <p>Address</p>
-              <p>Phone</p>
-              <a href="#">Website</a>
-            </div>
-            <div>
-              <p>Membership</p>
-            </div>
-          </div>
-          <div class="card-list">
-            <div class="card-list-info">
-              <p>Name</p>
-              <p>Address</p>
-              <p>Phone</p>
-              <a href="#">Website</a>
-            </div>
-            <div>
-              <p>Membership</p>
-            </div>
-          </div>
-        </section>
-        */
