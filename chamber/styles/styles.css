@@ -91,11 +91,11 @@ nav ul li a:hover {
   color: var(--lila);
   text-align: center;
   }
-a {
+.a {
   text-decoration: none;
   color: var(--lila);
 }
-a:hover {
+.a:hover {
   text-decoration: underline;
 }
 .name {

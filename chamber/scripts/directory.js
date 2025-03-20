@@ -10,7 +10,7 @@ let membersData = [];
 // Botón Grid
 gridbutton.addEventListener("click", () => {
   displayContainer.classList.remove("list");
-  
+
   displayMembers(membersData);
 });
 
@@ -51,7 +51,7 @@ function displayMembers(members) {
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
+      <a class="a" href="${member.website}" target="_blank">Visit Website</a>
       <p>${member.membership} Membership</p>
     `;
 
