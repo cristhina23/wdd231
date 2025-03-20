@@ -38,6 +38,9 @@ header {
 .container-header input {
   display: none;
 }
+h3 {
+  font-size: 1rem;
+}
 .top {
   display: flex;
   justify-content: space-between;
