@@ -1,7 +1,7 @@
 [
   {
     "name": "Restaurante Sabor Peruano",
-    "address": "Av. Los Héroes 123, Villa El Salvador, Lima",
+    "address": "Av. Los Héroes 123, Lima",
     "phone": "+51 987 654 321",
     "website": "https://www.saborperuano.com",
     "image": "images/businessman-first.jpg",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Textiles Andinos",
-    "address": "Jr. Comercio 456, San Juan de Miraflores, Lima",
+    "address": "Jr. Comercio 456, Lima",
     "phone": "+51 956 123 789",
     "website": "https://www.textilesandinos.pe",
     "image": "images/businessman-first.jpg",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Consultora Empresarial Lima Sur",
-    "address": "Av. Lima Sur 789, Villa María del Triunfo, Lima",
+    "address": "Av. Lima Sur 789, Lima",
     "phone": "+51 912 345 678",
     "website": "https://www.consultoralimasur.com",
     "image": "images/businessman-first.jpg",
@@ -28,7 +28,7 @@
   },
   {
     "name": "AgroExport Perú",
-    "address": "Av. Panamericana Sur Km 20, Lurín, Lima",
+    "address": "Av. Pan.Sur Km 20, Lima",
     "phone": "+51 923 456 789",
     "website": "https://www.agroexportperu.com",
     "image": "images/businessman-first.jpg",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Academia de Inglés Global",
-    "address": "Calle Progreso 222, Chorrillos, Lima",
+    "address": "Calle Progreso 222, Lima",
     "phone": "+51 901 234 567",
     "website": "https://www.globalenglish.pe",
     "image": "images/businessman-first.jpg",
@@ -46,7 +46,7 @@
   },
   {
     "name": "Clinica Dental Sonrisa Feliz",
-    "address": "Av. Central 555, Villa El Salvador, Lima",
+    "address": "Av. Central 555, Lima",
     "phone": "+51 988 765 432",
     "website": "https://www.sonrisafeliz.pe",
     "image": "images/businessman-first.jpg",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Gimnasio Fuerza Total",
-    "address": "Av. Revolución 111, San Juan de Miraflores, Lima",
+    "address": "Av. Revolución 111, Lima",
     "phone": "+51 987 123 456",
     "website": "https://www.fuerzatotalgym.com",
     "image": "images/businessman-first.jpg",
