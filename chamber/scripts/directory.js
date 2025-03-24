@@ -33,7 +33,7 @@ async function loadMembers() {
 
     const members = await response.json();
     membersData = members;
-    displayMembers(members); // Render por defecto en grid
+    displayMembers(members); 
   } catch (error) {
     console.error("Error fetching members:", error);
   }
@@ -47,12 +47,16 @@ function displayMembers(members) {
     card.classList.add("card"); 
 
     card.innerHTML = `
+      <div class="card-image">
       <img src="${member.image}" alt="local shop" />
+      </div>
+      <div class="card-info">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
       <a class="a" href="${member.website}" target="_blank">Visit Website</a>
       <p>${member.membership} Membership</p>
+      </div>
     `;
 
     displayContainer.appendChild(card);

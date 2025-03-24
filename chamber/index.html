@@ -8,9 +8,9 @@
     <meta name="description" content="Chamber of Commerce Directory" />
     <title>Lima Peru Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/menu-footer.css">
+    <link rel="stylesheet" href="styles/menu-footer.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/smaller.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,13 +25,16 @@
 
     <meta property="og:title" content="Lima Peru chamber of commerce" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://cristhina23.github.io/wdd231/chamber/images/social-image.png" />
+    <meta
+      property="og:image"
+      content="https://cristhina23.github.io/wdd231/chamber/images/social-image.png"
+    />
     <meta
       property="og:url"
       content="https://cristhina23.github.io/wdd231/chamber/directory.html"
     />
 
-    
+    <script defer src="scripts/home.js"></script>
   </head>
   <body>
     <header>
@@ -57,9 +60,9 @@
         <div class="bottom">
           <nav>
             <ul>
-              <li><a href="index.html" >Home</a></li>
+              <li class="active-link"><a href="index.html">Home</a></li>
               <li><a href="discover.html">Discover</a></li>
-              <li class="active-link"><a href="directory.html">Directory</a></li>
+              <li><a href="directory.html">Directory</a></li>
               <li><a href="join.html">Join</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -69,15 +72,51 @@
     </header>
     <main>
       <div class="main-container">
-        <div class="main-top">
-          <h1>Directory</h1>
-          <div class="button-container">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <h1>Home</h1>
+        <section>
+          <div class="hero">
+            <img src="images/banner1.webp" alt="hero" />
+            <a href="#" class="book-now">Book Now</a>
           </div>
-        </div>
+        </section>
 
-        <section class="cards-container grid" id="members-container"></section>
+        <section class="weather">
+          <div class="events">
+            <h2>Upcoming Events</h2>
+            <div class="events-container">
+              <a href="#">Marketing workshop for entrepreneurs <span>4/15/2023</span></a>
+              <a href="#">Business conferencen <span>4/19/2023</span></a>
+              <a href="#">Business networking event <span>4/27/2023</span></a>
+            </div>
+          </div>
+          <div class="weather-container">
+            <h2>Current Weather</h2>
+
+            <div class="current-weather-info">
+              <div class="current-weather-img">
+                <img src="images\weather-icon.svg" alt="weather icon" />
+              </div>
+              <div class="current-weather-text">
+                <p><span id="current-temp"></span></p>
+                <p><span id="current-desc"></span></p>
+                <p>High: <span id="high"></span></p>
+                <p>Low: <span id="low"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="forecast-container">
+            <h2>Weather Forecast</h2>
+
+            <div id="forecast" class="forecast"></div>
+          </div>
+        </section>
+        <section class="advertisement">
+          <div class="advertisement-container" id="advertisement"></div>
+        </section>
       </div>
     </main>
     <footer>
@@ -89,10 +128,17 @@
           <p>limasouthchamber.com</p>
           <p>123-456-7890</p>
         </div>
+
         <div class="footer-container social">
-          <a href="#" aria-label="Facebook"><i class="bx bxl-facebook-circle bx-md"></i></a>
-          <a href="#" aria-label="instagram"><i class="bx bxl-instagram bx-md"></i></a>
-          <a href="#" aria-label="Github"><i class="bx bxl-github bx-md"></i></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="bx bxl-facebook-circle bx-md"></i
+          ></a>
+          <a href="#" aria-label="instagram"
+            ><i class="bx bxl-instagram bx-md"></i
+          ></a>
+          <a href="#" aria-label="Github"
+            ><i class="bx bxl-github bx-md"></i
+          ></a>
         </div>
         <div class="footer-container">
           <p>WDD 231 Class Project</p>
@@ -102,8 +148,5 @@
         </div>
       </div>
     </footer>
-
-   
   </body>
 </html>
- <script type="module" src="scripts/directory.js"></script>

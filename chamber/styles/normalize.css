@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #adb5bd;
+  --tertiary-color: #6c757d;
+  --other-color: #343a40;
+  --text-color: #212529;
+  --lila: rgb(155, 81, 224);
+  --heading-font: "Spinnaker", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

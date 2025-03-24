@@ -1,55 +1,64 @@
 [
   {
-    "name": "Restaurante Sabor Peruano",
+    "name": "Peruvian Flavor Restaurant",
     "address": "Av. Los Héroes 123, Lima",
     "phone": "+51 987 654 321",
     "website": "https://www.saborperuano.com",
-    "image": "images/businessman-first.jpg",
+    "image": "images/restaurant2.jpg",
     "membership": "Gold",
     "email": "contacto@saborperuano.com"
   },
   {
-    "name": "Textiles Andinos",
+    "name": "Happy Smile Dental Clinic",
     "address": "Jr. Comercio 456, Lima",
     "phone": "+51 956 123 789",
-    "website": "https://www.textilesandinos.pe",
-    "image": "images/businessman-first.jpg",
+    "website": "https://www.happysmiledentalclinic.pe",
+    "image": "images/dentist-result.webp",
     "membership": "Silver",
     "email": "ventas@textilesandinos.pe"
   },
   {
-    "name": "Consultora Empresarial Lima Sur",
+    "name": "Business Consulting Lima South",
     "address": "Av. Lima Sur 789, Lima",
     "phone": "+51 912 345 678",
     "website": "https://www.consultoralimasur.com",
-    "image": "images/businessman-first.jpg",
+    "image": "images/businessman-second.jpg",
     "membership": "Bronze",
     "email": "info@consultoralimasur.com"
   },
   {
-    "name": "AgroExport Perú",
+    "name": "Events Happy Partys",
     "address": "Av. Pan.Sur Km 20, Lima",
     "phone": "+51 923 456 789",
-    "website": "https://www.agroexportperu.com",
-    "image": "images/businessman-first.jpg",
+    "website": "https://www.happypartys.com",
+    "image": "images/events.webp",
     "membership": "Gold",
     "email": "exportaciones@agroexportperu.com"
   },
   {
-    "name": "Academia de Inglés Global",
+    "name": "Global English Academy",
     "address": "Calle Progreso 222, Lima",
     "phone": "+51 901 234 567",
     "website": "https://www.globalenglish.pe",
-    "image": "images/businessman-first.jpg",
-    "membership": "Silver",
+    "image": "images/english-academy.webp",
+    "membership": "Gold",
     "email": "admisiones@globalenglish.pe"
   },
   {
-    "name": "Clinica Dental Sonrisa Feliz",
+    "name": "Textil Alexandria",
+    "address": "Calle Progreso 222, Lima",
+    "phone": "+51 901 234 567",
+    "website": "https://www.globalenglish.pe",
+    "image": "images/shop-second.jpg",
+    "membership": "Gold",
+    "email": "admisiones@globalenglish.pe"
+  },
+  {
+    "name": "Peruvian Farmacy",
     "address": "Av. Central 555, Lima",
     "phone": "+51 988 765 432",
     "website": "https://www.sonrisafeliz.pe",
-    "image": "images/businessman-first.jpg",
+    "image": "images/farmacy.webp",
     "membership": "Bronze",
     "email": "citas@sonrisafeliz.pe"
   },
@@ -58,8 +67,8 @@
     "address": "Av. Revolución 111, Lima",
     "phone": "+51 987 123 456",
     "website": "https://www.fuerzatotalgym.com",
-    "image": "images/businessman-first.jpg",
-    "membership": "Gold",
+    "image": "images/gym.webp",
+    "membership": "Silver",
     "email": "info@fuerzatotalgym.com"
   }
 ]
