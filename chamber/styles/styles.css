@@ -1,7 +1,6 @@
 
 body {
   font-family: var(--body-font);
-  font-display: swap;
   line-height: 1.5;
   background-color: var(--primary-color);
   color: var(--text-color);
