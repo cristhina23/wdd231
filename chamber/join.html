@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Viszelle Chacon" />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta
+      name="description"
+      content="Chamber of Commerce Directory"/>
+    <title>Lima Peru Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/menu-footer.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"/>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spinnaker&display=swap"
+      rel="stylesheet"/>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
+
+    <meta
+      property="og:title"
+      content="Lima Peru chamber of commerce"/>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Discover events, resources, and business opportunities at the Lima Peru Chamber of Commerce. Connect, grow, and support the local community."/>
+
+    <meta
+      property="og:image"
+      content="https://cristhina23.github.io/wdd231/chamber/images/social-image.png"/>
+    <meta
+      property="og:url"
+      content="https://cristhina23.github.io/wdd231/chamber/directory.html"/>
+
+    <script defer src="scripts/join.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <div class="top">
+          <div class="image-logo">
+            <img
+              class="logo"
+              src="images/logo.jpg"
+              alt=""/>
+          </div>
+          <div class="name">
+            <h2 class="name">
+              Perú Chamber <br />
+              of Commerce
+            </h2>
+          </div>
+        </div>
+        <input type="checkbox" id="lanzador" />
+
+        <label
+          aria-label="open menu"
+          for="lanzador"
+          class="menu-activador">
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+        </label>
+        <div class="bottom">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li class="active-link"><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form method="get" action="thankyou.html">
+          <label>
+            First Name:
+            <input
+              type="text"
+              name="firstName"
+              title="First Name"
+              required
+              autocomplete="given-name"/>
+          </label>
+          <label>
+            Last Name:
+            <input
+              type="text"
+              name="lastName"
+              title="Last Name"
+              required
+              autocomplete="family-name"/>
+          </label>
+          <label>
+            Organizational Title:
+            <input
+              type="text"
+              name="orgTitle"
+              title="Organizational Title"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\-\s]{7,}"/>
+          </label>
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              title="Email Address"
+              required
+              autocomplete="email"
+              placeholder="example@email.com"/>
+          </label>
+          <label>
+            Mobile Number:
+            <input
+              type="tel"
+              name="mobile"
+              title="Mobile Number"
+              required
+              autocomplete="tel"/>
+          </label>
+          <label>
+            Organization Name:
+            <input
+              type="text"
+              name="organization"
+              title="Organization Name"
+              required
+              autocomplete="organization"/>
+          </label>
+          <label>
+            Membership Level:
+            <select
+              name="membershipLevel"
+              title="Membership Level">
+              <option value="np">NP Membership (Free)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+          <label>
+            Organization Description:
+            <textarea
+              name="orgDescription"
+              title="Organization Description"></textarea>
+          </label>
+          <input
+            type="hidden"
+            name="timestamp"
+            id="timestamp"/>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+
+        <div class="membership-cards">
+          <div class="membership-card" id="np-card">
+            <h3>NP Membership</h3>
+            <a href="#" id="modal-np-card">More Info</a>
+          </div>
+          <div class="membership-card" id="bronze-card">
+            <h3>Bronze Membership</h3>
+            <a href="#" id="modal-bronze-card">More Info</a>
+          </div>
+          <div class="membership-card" id="silver-card">
+            <h3>Silver Membership</h3>
+            <a href="#" id="modal-silver-card">More Info</a>
+          </div>
+          <div class="membership-card" id="gold-card">
+            <h3>Gold Membership</h3>
+            <a href="#" id="modal-gold-card">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <dialog id="modal-np">
+        <p>No fee. Access to networking events.</p>
+        <button id="close-modal">Close</button>
+      </dialog>
+      <dialog id="modal-bronze">
+        <p>Basic promotion and training materials.</p>
+        <button id="close-modal">Close</button>
+      </dialog>
+      <dialog id="modal-silver">
+        <p>Includes spotlight ads and event discounts.</p>
+        <button id="close-modal">Close</button>
+      </dialog>
+      <dialog id="modal-gold">
+        <p>All benefits plus priority support and premium
+          placement.</p>
+        <button id="close-modal">Close</button>
+      </dialog>
+    </main>
+
+    <footer>
+      <div class="global-container">
+        <div class="footer-container">
+          <p>Lima Peru Chamber of Commerce</p>
+          <p>Corner of Av. 200 Millas and</p>
+          <p>Av. Revolución - Villa El Salvador</p>
+          <p>limasouthchamber.com</p>
+          <p>123-456-7890</p>
+        </div>
+
+        <div class="footer-container social">
+          <a href="#" aria-label="Facebook"><i class="bx bxl-facebook-circle bx-md"></i></a>
+          <a href="#" aria-label="instagram"><i class="bx bxl-instagram bx-md"></i></a>
+          <a href="#" aria-label="Github"><i class="bx bxl-github bx-md"></i></a>
+        </div>
+        <div class="footer-container">
+          <p>WDD 231 Class Project</p>
+          <p>Viszelle Chacon</p>
+          <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
+          <p>Last Updated: <span id="last-updated"></span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

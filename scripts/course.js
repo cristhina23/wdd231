@@ -84,14 +84,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const cseCoursesBtn = document.getElementById("cse-courses");
   const courseButtons = document.querySelectorAll(".courses button");
   const creditDisplay = document.getElementById("total-credits");
-  
+  const courseDetails = document.getElementById("course-details");
+
+
   
   allCoursesBtn.addEventListener("click", () => filterCourses("all"));
   wddCoursesBtn.addEventListener("click", () => filterCourses("wdd"));
   cseCoursesBtn.addEventListener("click", () => filterCourses("cse"));
 
 
- 
+  courseButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const courseNumber = parseInt(button.textContent.split(" ")[1]);
+      const course = courses.find(c => c.number === courseNumber);
+      DisplayCourseDetails(course);
+    });
+  });
 
   function filterCourses(type) {
       courseButtons.forEach(button => {
@@ -142,4 +150,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         creditDisplay.textContent = `Total Credits: ${totalCredits}`;
     }
+
+    function DisplayCourseDetails(course) {
+    courseDetails.innerHTML = ``;
+    courseDetails.innerHTML = ` 
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+    <p><strong>Completed:</strong> ${course.completed ? "Yes" : "No"}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById("closeModal");
+    closeModal.addEventListener("click", () => courseDetails.close());
+}
 });
+
