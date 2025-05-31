@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       // Cerrar el modal desde su botón
-      const closeBtn = modal.querySelector("#close-modal");
+      const closeBtn = modal.querySelector(".close-modal");
       if (closeBtn) {
         closeBtn.addEventListener("click", () => modal.close());
       }

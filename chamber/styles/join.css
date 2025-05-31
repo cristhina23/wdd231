@@ -3,7 +3,10 @@ main {
   margin: 0 auto;
   padding: 20px;
 }
-
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 .container {
   display: flex;
 }
@@ -96,4 +99,17 @@ dialog::backdrop {
   background: transparent;
   border: none;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+  }
+  .membership-cards {
+    width: 100%;
+  }
+  
 }
