@@ -8,11 +8,16 @@ main {
 
 .cards-container {
   display: grid;
+   grid-template-areas: 
+    "card"
+    "card"
+    "card";
   gap: 1rem;
   padding: 1rem;
 }
 
 .card {
+  
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
@@ -36,6 +41,11 @@ main {
   height: 200px;
   object-fit: cover; 
 }
+
+ .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
 .card address {
   font-size: 0.9rem;
 }
@@ -58,9 +68,17 @@ main {
 /* Small screens (320px - 640px) */
 @media (max-width: 640px) {
   .cards-container {
-    
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4";
     grid-template-columns: 1fr;
   }
+  .card1 { grid-area: card1; }
+  .card2 { grid-area: card2; }
+  .card3 { grid-area: card3; }
+  .card4 { grid-area: card4; }
   .card {
     padding: 0;
   }
@@ -71,8 +89,9 @@ main {
   }
 
   .card img {
+    height: 200px;
     width: 100%;
-    height: auto;
+    object-fit: cover;
     
   }
 
@@ -93,9 +112,17 @@ main {
 /* Medium screens (641px - 1024px) */
 @media (min-width: 641px) and (max-width: 1024px) {
   .cards-container {
-  
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4";
     grid-template-columns: 1fr;
   }
+  .card1 { grid-area: card1; }
+  .card2 { grid-area: card2; }
+  .card3 { grid-area: card3; }
+  .card4 { grid-area: card4; }
   .card address {
     font-size: 0.8rem;
     padding-top: 0.9rem;
@@ -104,13 +131,19 @@ main {
     padding-top: 1rem;
   }
   
+  
 }
 
 /* Large screens (1025px and above) */
 @media (min-width: 1025px) {
   .cards-container {
-    
+    grid-template-areas: 
+    "card1 card2"
+      "card3 card4";;
     grid-template-columns: repeat(2, 1fr);
   }
-  
+  .card1 { grid-area: card1; }
+  .card2 { grid-area: card2; }
+  .card3 { grid-area: card3; }
+  .card4 { grid-area: card4; }
 }
