@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Viszelle Chacon" />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta name="description" content="Chamber of Commerce Directory" />
+  <title>Discover</title>
+   <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/menu-footer.css" />
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spinnaker&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+
+    <meta property="og:title" content="Lima Peru chamber of commerce" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover events, resources, and business opportunities at the Lima Peru Chamber of Commerce. Connect, grow, and support the local community.">
+
+    <meta
+      property="og:image"
+      content="https://cristhina23.github.io/wdd231/chamber/images/social-image.png"
+    />
+    <meta
+      property="og:url"
+      content="https://cristhina23.github.io/wdd231/chamber/directory.html"
+    />
+
+    <script defer src="scripts/discover.js" type="module"></script>
+</head>
+<body>
+  <header>
+      <div class="container-header">
+        <div class="top">
+          <div class="image-logo">
+            <img class="logo" src="images/logo.jpg" alt="" />
+          </div>
+          <div class="name">
+            <h2 class="name">
+              Perú Chamber <br />
+              of Commerce
+            </h2>
+          </div>
+        </div>
+        <input type="checkbox" id="lanzador" />
+
+        <label aria-label="open menu" for="lanzador" class="menu-activador">
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+        </label>
+        <div class="bottom">
+          <nav>
+            <ul>
+              <li >Home</a></li>
+              <li class="active-link"><a href="discover.html">Discover</a></li>
+              <li ><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Discover</h1>
+      <section class="cards">
+        
+      </section>
+    </main>
+  <footer>
+      <div class="global-container">
+        <div class="footer-container">
+          <p>Lima Peru Chamber of Commerce</p>
+          <p>Corner of Av. 200 Millas and</p>
+          <p>Av. Revolución - Villa El Salvador</p>
+          <p>limasouthchamber.com</p>
+          <p>123-456-7890</p>
+        </div>
+
+        <div class="footer-container social">
+          <a href="#" aria-label="Facebook"
+            ><i class="bx bxl-facebook-circle bx-md"></i
+          ></a>
+          <a href="#" aria-label="instagram"
+            ><i class="bx bxl-instagram bx-md"></i
+          ></a>
+          <a href="#" aria-label="Github"
+            ><i class="bx bxl-github bx-md"></i
+          ></a>
+        </div>
+        <div class="footer-container">
+          <p>WDD 231 Class Project</p>
+          <p>Viszelle Chacon</p>
+          <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
+          <p>Last Updated: <span id="last-updated"></span></p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
