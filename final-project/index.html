@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="title" content="Perfect Diet - Create Your Personalized Diet in Minutes">
     <meta name="author" content="Viszelle Chacon">
-    <meta name="description" content="Discover healthy, personalized diet plans tailored to your goals. Start your journey to better health today with Perfect Diet!">
+    <meta name="description" content="Create a healthy and personalized diet plan in minutes. Find delicious meal plans tailored to your fitness goals and lifestyle.">
     <link
       rel="icon"
       href="/images/favicon.png"
@@ -41,7 +41,7 @@
     <div class="container">
       <header>
        <figure>
-        <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+        <a href="index.html"><img src="images/logo.jpg" alt="logo de perfect diet"></a>
        </figure>
         <input type="checkbox" id="lanzador" />
 
@@ -54,7 +54,7 @@
           <span class="menu-activador-linea"></span>
           <span class="menu-activador-linea"></span>
         </label>
-        <nav>
+        <nav role="navigation">
           <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -95,7 +95,7 @@
               <div class="button">
                 <a href="form.html">Start now</a> </div
               ><div class="button red">
-                <a href="plans.html">Plans</a>
+                <a href="#" aria-label="Plans">Plans</a>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@
               <img
                 src="images/01_slimming.webp"
                 class="scroll-image"
-                alt="" loading="lazy"
+                alt="plate" loading="lazy"
               />
             </div>
             <div class="como-funciona-text">
@@ -136,8 +136,8 @@
                 > Receive
                 a plan tailored to you</p
               >
-              <div class="button">
-                <a href="how-it-works.html">More Info</a>
+              <div class="button" aria-label="More Info">
+                <a href="#">More Info</a>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@
               <div class="image-container"
                 ><img
                   src="images/03_menu_balanced.webp"
-                  alt="" loading="lazy"
+                  alt="delicious plate" loading="lazy"
               /></div>
 
               <h3>Food Personalization</h3>
@@ -159,7 +159,7 @@
                 those you don't like. The platform will
                 adjust your diet based on your preferences.
               </p>
-              <div class="button">
+              <div class="button" aria-label="More Info">
                 <a href="#">More Info</a>
               </div>
             </div>
@@ -167,7 +167,7 @@
               <div class="image-container"
                 ><img
                   src="images/04_menu_vegans.webp"
-                  alt="" loading="lazy"
+                  alt="vegans" loading="lazy"
               /></div>
               <h3>Food Personalization</h3>
               <p>
@@ -175,7 +175,7 @@
                 those you don't like. The platform will
                 adjust your diet based on your preferences.
               </p>
-              <div class="button">
+              <div class="button" aria-label="More Info">
                 <a href="#">More Info</a>
               </div>
             </div>
@@ -183,7 +183,7 @@
               <div class="image-container"
                 ><img
                   src="images/02_menu_muscle.webp"
-                  alt="" loading="lazy"
+                  alt="food" loading="lazy"
               /></div>
               <h3>Food Personalization</h3>
               <p>
@@ -191,7 +191,7 @@
                 those you don't like. The platform will
                 adjust your diet based on your preferences.
               </p>
-              <div class="button">
+              <div class="button" aria-label="More Info">
                 <a href="#">More Info</a>
               </div>
             </div>
@@ -237,13 +237,13 @@
               <div class="transformacion-card-img">
                 <img
                   src="images/transformacion1.webp"
-                  alt="" loading="lazy"
+                  alt="tranformations" loading="lazy"
                 />
               </div>
               <div class="transformacion-card-img">
                 <img
                   src="images/transformacion2.webp"
-                  alt="" loading="lazy"
+                  alt="transformation" loading="lazy"
                 />
               </div>
             </div>
@@ -275,7 +275,7 @@
                 placeholder="Enter your email"
                 required
               />
-             <div class="button">SUSCRIBE</div>
+             <button class="button" aria-label="Subscribe">SUSCRIBE</button>
               <p id="email-error" class="error-message"></p>
             </form>
           </div>
@@ -301,13 +301,13 @@
             </div>
             <div class="social-icons">
               <a href="#"
-                ><img src="images/facebook.png" alt=""></a>
+                ><img src="images/facebook.png" alt="logo de facebook"></a>
               <a href="#"
-                ><img src="images/instagram.png" alt=""></a>
+                ><img src="images/instagram.png" alt="logo de instagram"></a>
               <a href="#"
                 ></a>
               <a href="#"
-                ><img src="images/linkedin.png" alt=""></a>
+                ><img src="images/linkedin.png" alt="logo de linkedin"></a>
             </div>
           </div>
 
@@ -362,7 +362,7 @@
      
   <div id="recipe-modal" class="modal hidden">
   <div class="modal-content">
-    <span id="close-modal" class="close-btn ">&times;</span>
+    <span id="close-modal" class="close-btn " aria-label="Close modal">&times;</span>
     <div id="modal-body">
       
     </div>
