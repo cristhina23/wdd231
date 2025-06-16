@@ -103,12 +103,5 @@
     "calories": "220",
     "image": "https://cdn.pixabay.com/photo/2022/04/10/10/51/poha-7123148_960_720.jpg",
     "description": "Fluffy eggs with bell peppers, onions and cheese."
-  },
-  {
-    "name": "Avocado Toast",
-    "time": "10 min",
-    "calories": "200",
-    "image": "https://cdn.pixabay.com/photo/2024/06/06/11/53/ai-generated-8812587_960_720.jpg",
-    "description": "Crispy toast topped with mashed avocado and spices."
   }
 ]
