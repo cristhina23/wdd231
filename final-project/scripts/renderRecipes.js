@@ -40,6 +40,7 @@ function openModal(recipe) {
   const img = document.createElement('img');
   img.src = recipe.image;
   img.alt = recipe.name;
+  img.loading = 'lazy';
  
 
   const title = document.createElement('h2');
