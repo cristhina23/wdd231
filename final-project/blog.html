@@ -21,6 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Joan&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mobile.css">
@@ -28,12 +33,33 @@
 <body>
    <div class="container">
       <header>
-        <figure><img src="/images/logo.jpg" alt="logo" /></figure>
+        <figure
+          ><a href="index.html"><img src="/images/logo.jpg" alt="logo"
+        /></a></figure>
+        <input type="checkbox" id="lanzador" />
+
+        <label
+          aria-label="open menu"
+          for="lanzador"
+          class="menu-activador"
+        >
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+        </label>
         <nav>
           <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="howItWorks.html">How It Works</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li
+              ><a href="about.html" 
+                >About Us</a
+              ></li
+            >
+            <li
+              ><a href="howItWorks.html" 
+                >How It Works</a
+              ></li
+            >
             <li><a href="blog.html" class="active">Blog</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
@@ -41,11 +67,20 @@
         <div class="user">
           <div class="user-picture">
             <i
-              ><box-icon type="solid" color="#178606" name="user"></box-icon
+              ><box-icon
+                type="solid"
+                color="#178606"
+                name="user"
+              ></box-icon
             ></i>
           </div>
           <div class="arrow">
-            <i><box-icon color="#178606" name="chevron-down"></box-icon></i>
+            <i
+              ><box-icon
+                color="#178606"
+                name="chevron-down"
+              ></box-icon
+            ></i>
           </div>
         </div>
         <div class="user-options">
@@ -57,63 +92,136 @@
           </ul>
         </div>
       </header>
-      
-      <footer>
-        <div class="footer-container">
-          <div class="footer-top">
-            <div class="footer-card especial">
-              <div class="imagen">
-                <img src="images/favicon.png" alt="" />
-              </div>
-              <p>
-                Transform your diet effortlessly. Customize, enjoy, and progress.
-              </p>
-              <div class="social">
-                <a href="#"
-                  ><img src="images/logotipo-de-instagram.png" alt=""
-                /></a>
-                <a href="#"><img src="images/facebook.png" alt="" /></a>
-                <a href="#"><img src="images/social.png" alt="" /></a>
-              </div>
+      <main>
+        <section class="blog-section">
+  <div class="blog-header">
+    <h1>Latest Blog Posts</h1>
+    <p>Explore articles that inspire a healthy and balanced life</p>
+  </div>
+
+  <div class="blog-container-page">
+    <!-- Card 1 -->
+    <div class="blog-card-page fade-in">
+      <div class="blog-image">
+        <img src="images/blog1.jpg" alt="Nutrition and emotional well-being">
+      </div>
+      <div class="blog-content">
+        <h3>Blog</h3>
+        <h2>The relationship between nutrition and emotional well-being</h2>
+        <p>Discover how the foods you eat affect your mood and daily energy. Learn how to design a nutritional plan that boosts your physical and mental well-being.</p>
+        <a href="#" class="button">Read more</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="blog-card-page fade-in">
+      <div class="blog-image">
+        <img src="images/01_menu_slimming.jpg" alt="Balanced diet tips">
+      </div>
+      <div class="blog-content">
+        <h3>Blog</h3>
+        <h2>How to maintain a balanced diet without sacrifice</h2>
+        <p>Avoid monotony in your diet with simple strategies to enjoy varied meals without losing sight of your goals. Find the perfect balance between health and flavor.</p>
+        <a href="#" class="button">Read more</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="blog-card-page fade-in">
+      <div class="blog-image">
+        <img src="images/blog3.jpg" alt="Nutrition and energy">
+      </div>
+      <div class="blog-content">
+        <h3>Blog</h3>
+        <h2>The power of mindful eating in your daily life</h2>
+        <p>Learn how being present during meals can improve your digestion, reduce stress, and help you reconnect with your body’s true needs.</p>
+        <a href="#" class="button">Read more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-section logo-social">
+            <div class="logo">
+              <a href="index.html"><img
+                src="images/favicon.png"
+                alt="Perfect Diet Logo"
+              /></a>
+              <p
+                >Empowering your lifestyle with quality,
+                style, and care. Thank you for being part of
+                our community.</p
+              >
             </div>
-            <div class="footer-card">
-              <h3>LINKS</h3>
-              <div class="lists">
-                <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Plans</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-              </div>
-            </div>
-            <div class="footer-card">
-              <h3>SUBSCRIBE</h3>
-             <div class="form">
-               <input type="text" placeholder="EMAIL" />
-              <div class="button">
-                <a href="#">Subscribe</a>
-              </div>
-             </div>
+            <div class="social-icons">
+              <a href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
-          <div class="footer-bottom">
-            <div class="line"></div>
-            <div class="copy">
-              <p>Created by Cristhina Chacon</p>
-              <p>2025 All rights reserved</p>
+
+          <div class="footer-section">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="plans.html">Products</a></li>
+              <li><a href="howItWorks.html">Clients</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section contact">
+            <h4>Contact Info</h4>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span>Our location:</span>
+                <p>Goldschmidtstraße 13, 04103 Leipzig</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div>
+                <span>Phones:</span>
+                <p>+49078-039-23-11</p>
+                <p>+49078-033-55-60</p>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="">
+            <p>WDD 231 Final Project </p>
+            <p>
+              &copy;2025 all rights reserved ✨ Viszelle
+              Chacon ✨ Venezuela</p
+            >
+            <br />
+          </div>
+          <p
+            >Last Updated: <span id="last-updated"></span
+          ></p>
         </div>
       </footer>
     </div>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

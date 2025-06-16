@@ -47,6 +47,10 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Joan&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
@@ -55,8 +59,19 @@
     <div class="container">
       <header>
         <figure
-          ><img src="/images/logo.jpg" alt="logo"
-        /></figure>
+          ><a href="index.html"><img src="/images/logo.jpg" alt="logo"
+        /></a></figure>
+        <input type="checkbox" id="lanzador" />
+
+        <label
+          aria-label="open menu"
+          for="lanzador"
+          class="menu-activador"
+        >
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+        </label>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -101,123 +116,136 @@
 
       <main>
         <section class="how-it-works">
-          <div class="container">
-            <h1>How It Works</h1>
-            <p class="intro"
-              >Your perfect meal plan in just a few steps
-              🚀</p
+          <div class="how-banner">
+            <div class="how-banner-text">
+              <h1
+              > How It
+              Works</h1
             >
+            <p class="intro"
+              >Discover how we make things simple and
+              efficient for you</p
+            ></div>
+          </div>
 
+          <div class="container">
             <div class="step">
-              <h2>1. Tell Us About You</h2>
+              <i
+                class="fa-solid fa-magnifying-glass step-icon"
+              ></i>
+              <h2>1. Research & Planning</h2>
               <p
-                >Answer a few quick questions about your
-                lifestyle, preferences, allergies, and
-                goals. No judgment, just your reality.</p
+                >We gather your requirements and create a
+                plan tailored to your goals.</p
               >
             </div>
 
             <div class="step">
-              <h2>2. AI Builds Your Plan</h2>
+              <i class="fa-solid fa-code step-icon"></i>
+              <h2>2. Design & Development</h2>
               <p
-                >Our smart system uses artificial
-                intelligence to create a custom meal plan
-                just for you—delicious, healthy, and
-                balanced.</p
+                >We build clean, fast, and responsive
+                solutions using modern technologies.</p
               >
             </div>
 
             <div class="step">
-              <h2>3. Get Your Plan Instantly</h2>
+              <i class="fa-solid fa-rocket step-icon"></i>
+              <h2>3. Launch & Support</h2>
               <p
-                >You’ll receive your personalized diet right
-                away. No waiting. You can view it online or
-                download it anytime.</p
-              >
-            </div>
-
-            <div class="step">
-              <h2>4. Eat, Enjoy, and Repeat</h2>
-              <p
-                >Follow your plan, enjoy your meals, and
-                feel the change. You can update your
-                preferences whenever you want.</p
+                >After testing, we launch your product and
+                continue to support your growth.</p
               >
             </div>
 
             <div class="cta">
-              <p><strong>Ready to get started?</strong></p>
-              <a href="/start" class="start-btn"
-                >Create Your Plan</a
-              >
+              <a href="#" class="button">Get Started </a>
             </div>
           </div>
         </section>
       </main>
 
-      <footer>
-        <div class="footer-container">
-          <div class="footer-top">
-            <div class="footer-card especial">
-              <div class="imagen">
-                <img src="images/favicon.png" alt="" />
-              </div>
-              <p>
-                Transform your diet effortlessly. Customize,
-                enjoy, and progress.
-              </p>
-              <div class="social">
-                <a href="#"
-                  ><img
-                    src="images/logotipo-de-instagram.png"
-                    alt=""
-                /></a>
-                <a href="#"
-                  ><img src="images/facebook.png" alt=""
-                /></a>
-                <a href="#"
-                  ><img src="images/social.png" alt=""
-                /></a>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-section logo-social">
+            <div class="logo">
+              <a href="index.html"><img
+                src="images/favicon.png"
+                alt="Perfect Diet Logo"
+              /></a>
+              <p
+                >Empowering your lifestyle with quality,
+                style, and care. Thank you for being part of
+                our community.</p
+              >
+            </div>
+            <div class="social-icons">
+              <a href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="plans.html">Products</a></li>
+              <li><a href="howItWorks.html">Clients</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section contact">
+            <h4>Contact Info</h4>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span>Our location:</span>
+                <p>Goldschmidtstraße 13, 04103 Leipzig</p>
               </div>
             </div>
-            <div class="footer-card">
-              <h3>LINKS</h3>
-              <div class="lists">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">How It Works</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Plans</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Recipes</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-card">
-              <h3>SUBSCRIBE</h3>
-              <div class="form">
-                <input type="text" placeholder="EMAIL" />
-                <div class="button">
-                  <a href="#">Subscribe</a>
-                </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div>
+                <span>Phones:</span>
+                <p>+49078-039-23-11</p>
+                <p>+49078-033-55-60</p>
               </div>
             </div>
           </div>
-          <div class="footer-bottom">
-            <div class="line"></div>
-            <div class="copy">
-              <p>Created by Cristhina Chacon</p>
-              <p>2025 All rights reserved</p>
-            </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="">
+            <p>WDD 231 Final Project </p>
+            <p>
+              &copy;2025 all rights reserved ✨ Viszelle
+              Chacon ✨ Venezuela</p
+            >
+            <br />
           </div>
+          <p
+            >Last Updated: <span id="last-updated"></span
+          ></p>
         </div>
       </footer>
     </div>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

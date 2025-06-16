@@ -15,6 +15,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <meta
       property="og:title"
       content="Perfect Diet - Create Your Personalized Diet in Minutes"
@@ -73,8 +77,20 @@
     <div class="container">
       <header>
         <figure
-          ><img src="/images/logo.jpg" alt="logo"
-        /></figure>
+          ><a href="index.html"
+            ><img src="/images/logo.jpg" alt="logo" /></a
+        ></figure>
+        <input type="checkbox" id="lanzador" />
+
+        <label
+          aria-label="open menu"
+          for="lanzador"
+          class="menu-activador"
+        >
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+          <span class="menu-activador-linea"></span>
+        </label>
         <nav>
           <ul>
             <li><a href="#" class="active">Home</a></li>
@@ -132,9 +148,9 @@
             </p>
             <div class="buttons">
               <div class="button">
-                <a href="#">Start now</a> </div
+                <a href="form.html">Start now</a> </div
               ><div class="button red">
-                <a href="#">Plans</a>
+                <a href="plans.html">Plans</a>
               </div>
             </div>
           </div>
@@ -176,33 +192,12 @@
                 a plan tailored to you</p
               >
               <div class="button">
-                <a href="#">More Info</a>
+                <a href="howItWorks.html">More Info</a>
               </div>
             </div>
           </div>
         </section>
-        <div class="numbers">
-          <div class="number">
-            <span>4.2k +</span>
-            <p>People created their diet.</p>
-          </div>
-          <div class="number">
-            <span>3.1k +</span>
-            <p>Monthly active users.</p>
-          </div>
-          <div class="number">
-            <span>1.9k +</span>
-            <p>Plans downloaded.</p>
-          </div>
-          <div class="number">
-            <span>2.7k +</span>
-            <p>Positive reviews.</p>
-          </div>
-          <div class="number">
-            <span>5.3 kg</span>
-            <p>Average weight lost.</p>
-          </div>
-        </div>
+        <div class="numbers"> </div>
         <section>
           <div class="pasos-container padding">
             <div class="pasos-text">
@@ -246,7 +241,7 @@
                 </p>
               </div>
               <div class="button">
-                <a href="#">Start now</a>
+                <a href="form.html">Start now</a>
               </div>
             </div>
             <div class="pasos-img">
@@ -274,7 +269,7 @@
                 adjust your diet based on your preferences.
               </p>
               <div class="button">
-                <a href="#">More Info</a>
+                <a href="howItWorks.html">More Info</a>
               </div>
             </div>
             <div class="card">
@@ -290,7 +285,7 @@
                 adjust your diet based on your preferences.
               </p>
               <div class="button">
-                <a href="#">More Info</a>
+                <a href="howItWorks.html">More Info</a>
               </div>
             </div>
             <div class="card">
@@ -306,7 +301,7 @@
                 adjust your diet based on your preferences.
               </p>
               <div class="button">
-                <a href="#">More Info</a>
+                <a href="howItWorks.html">More Info</a>
               </div>
             </div>
           </div>
@@ -349,7 +344,7 @@
                 >
               </ul>
               <div class="button">
-                <a href="#">Plans</a>
+                <a href="plans.html">Plans</a>
               </div>
             </div>
           </div>
@@ -390,7 +385,7 @@
                     confidence</li
                   >
                 </ul>
-                <a href="#" class="more"
+                <a href="plans.html" class="more"
                   ><span>MORE RESULTS</span></a
                 >
               </div>
@@ -409,6 +404,14 @@
             </div>
           </div>
         </section>
+        <section class="recipes-section">
+          <h2>Our Favorite Recipes</h2>
+          <div
+            id="recipes-container"
+            class="recipes-container"
+          ></div>
+        </section>
+
         <section>
           <div class="blog-container">
             <div class="blog-card blog-text">
@@ -424,7 +427,7 @@
                 and mental well-being.
               </p>
               <div class="button">
-                <a href="#">Read more</a>
+                <a href="blog.html">Read more</a>
               </div>
             </div>
             <div class="blog-card blog-img">
@@ -443,11 +446,14 @@
                 balance between health and flavor.
               </p>
               <div class="button">
-                <a href="#">Read more</a>
+                <a href="blog.html">Read more</a>
               </div>
             </div>
             <div class="blog-card blog-img">
-              <img src="images/pasos.jpg" alt="" />
+              <img
+                src="images/01_menu_slimming.jpg"
+                alt=""
+              />
             </div>
             <div class="blog-card blog-text green">
               <h3>Blog</h3>
@@ -462,7 +468,7 @@
                 and mental well-being.
               </p>
               <div class="button">
-                <a href="#">Read more</a>
+                <a href="blog.html">Read more</a>
               </div>
             </div>
             <div class="blog-card blog-img">
@@ -494,71 +500,107 @@
             </form>
           </div>
         </section>
+        <div class="gradient"></div>
       </main>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-top">
-            <div class="footer-card especial">
-              <div class="imagen">
-                <img src="images/favicon.png" alt="" />
-              </div>
-              <p>
-                Transform your diet effortlessly. Customize,
-                enjoy, and progress.
-              </p>
-              <div class="social">
-                <a href="#"
-                  ><img
-                    src="images/logotipo-de-instagram.png"
-                    alt=""
-                /></a>
-                <a href="#"
-                  ><img src="images/facebook.png" alt=""
-                /></a>
-                <a href="#"
-                  ><img src="images/social.png" alt=""
-                /></a>
-              </div>
+
+      <div class="gradient"></div>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-section logo-social">
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="images/favicon.png"
+                  alt="Perfect Diet Logo"
+              /></a>
+              <p
+                >Empowering your lifestyle with quality,
+                style, and care. Thank you for being part of
+                our community.</p
+              >
             </div>
-            <div class="footer-card">
-              <h3>LINKS</h3>
-              <div class="lists">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">How It Works</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Plans</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Recipes</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-card">
-              <h3>SUBSCRIBE</h3>
-              <div class="form">
-                <input type="text" placeholder="EMAIL" />
-                <div class="button">
-                  <a href="#">Subscribe</a>
-                </div>
-              </div>
+            <div class="social-icons">
+              <a href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
           </div>
-          <div class="footer-bottom">
-            <div class="line"></div>
-            <div class="copy">
-              <p>Created by Cristhina Chacon</p>
-              <p>2025 All rights reserved</p>
+
+          <div class="footer-section">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="plans.html">Products</a></li>
+              <li><a href="howItWorks.html">Clients</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section contact">
+            <h4>Contact Info</h4>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span>Our location:</span>
+                <p>Goldschmidtstraße 13, 04103 Leipzig</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div>
+                <span>Phones:</span>
+                <p>+49078-039-23-11</p>
+                <p>+49078-033-55-60</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="">
+            <p>WDD 231 Final Project </p>
+            <p>
+              &copy;2025 all rights reserved ✨ Viszelle
+              Chacon ✨ Venezuela</p
+            >
+            <br />
+          </div>
+          <p
+            >Last Updated: <span id="last-updated"></span
+          ></p>
+        </div>
       </footer>
-    </div>
+
+      <!-- Modal HTML -->
+<div id="recipe-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal">&times;</span>
+    <img id="modal-image" src="" alt="Recipe image">
+    <h3 id="modal-title"></h3>
+    <p id="modal-time"></p>
+    <p id="modal-calories"></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="script.js"></script>
+    
+
+    <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>

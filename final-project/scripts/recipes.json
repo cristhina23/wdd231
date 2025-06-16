@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Chicken Salad",
+    "time": "20 min",
+    "calories": "250",
+    "image": "https://cdn.pixabay.com/photo/2017/10/03/04/20/healthy-food-2811271_1280.jpg",
+    "description": "A light and healthy option with grilled chicken and veggies."
+  },
+  {
+    "name": "Avocado Toast",
+    "time": "10 min",
+    "calories": "200",
+    "image": "https://cdn.pixabay.com/photo/2024/06/06/11/53/ai-generated-8812587_960_720.jpg",
+    "description": "Crispy toast topped with mashed avocado and spices."
+  },
+  {
+    "name": "Beef Stir Fry",
+    "time": "30 min",
+    "calories": "350",
+    "image": "https://cdn.pixabay.com/photo/2021/12/30/11/33/italian-cuisine-6903774_1280.jpg",
+    "description": "Savory stir-fried beef with colorful vegetables."
+  },
+  {
+    "name": "Pasta Carbonara",
+    "time": "25 min",
+    "calories": "400",
+    "image": "https://cdn.pixabay.com/photo/2024/06/06/11/53/ai-generated-8812575_1280.jpg",
+    "description": "Classic creamy pasta with bacon and parmesan."
+  },
+  {
+    "name": "Fruit Smoothie",
+    "time": "5 min",
+    "calories": "180",
+    "image": "https://cdn.pixabay.com/photo/2023/05/31/11/15/fish-8031138_960_720.jpg",
+    "description": "A refreshing mix of berries, banana and yogurt."
+  },
+  {
+    "name": "Veggie Omelette",
+    "time": "15 min",
+    "calories": "220",
+    "image": "https://cdn.pixabay.com/photo/2022/04/10/10/51/poha-7123148_960_720.jpg",
+    "description": "Fluffy eggs with bell peppers, onions and cheese."
+  },
+  {
+    "name": "Grilled Salmon",
+    "time": "25 min",
+    "calories": "320",
+    "image": "https://cdn.pixabay.com/photo/2024/10/04/12/47/ai-generated-9096288_960_720.jpg",
+    "description": "Perfectly grilled salmon fillet with lemon."
+  },
+  {
+    "name": "Quinoa Bowl",
+    "time": "20 min",
+    "calories": "270",
+    "image": "https://cdn.pixabay.com/photo/2017/06/29/23/32/cashews-2456605_1280.jpg",
+    "description": "Healthy bowl with quinoa, avocado and beans."
+  },
+  {
+    "name": "Tuna Sandwich",
+    "time": "10 min",
+    "calories": "300",
+    "image": "https://cdn.pixabay.com/photo/2019/08/12/18/43/bacon-4401891_960_720.jpg",
+    "description": "Classic tuna salad served in whole wheat bread."
+  },
+  {
+    "name": "Chicken Wrap",
+    "time": "15 min",
+    "calories": "290",
+    "image": "https://cdn.pixabay.com/photo/2018/12/22/16/36/quinoa-3889915_1280.jpg",
+    "description": "Tortilla filled with chicken, lettuce, and sauce."
+  },
+  {
+    "name": "Greek Yogurt Bowl",
+    "time": "5 min",
+    "calories": "150",
+    "image": "https://cdn.pixabay.com/photo/2018/12/22/16/36/quinoa-3889915_1280.jpg",
+    "description": "Greek yogurt with honey, granola and fruit."
+  },
+  {
+    "name": "Lentil Soup",
+    "time": "35 min",
+    "calories": "210",
+    "image": "https://cdn.pixabay.com/photo/2019/05/29/05/13/list-of-foods-4236635_1280.jpg",
+    "description": "Comforting lentil soup with carrots and potatoes."
+  },
+  {
+    "name": "Mango Chia Pudding",
+    "time": "10 min",
+    "calories": "190",
+    "image": "https://cdn.pixabay.com/photo/2020/02/25/03/05/delight-4877830_960_720.jpg",
+    "description": "Chia seeds soaked in milk with mango puree."
+  },
+  {
+    "name": "Baked Potatoes",
+    "time": "40 min",
+    "calories": "280",
+    "image": "https://cdn.pixabay.com/photo/2015/09/09/20/02/breakfast-932956_1280.jpg",
+    "description": "Crispy baked potatoes with sour cream."
+  },
+  {
+    "name": "Veggie Omelette",
+    "time": "15 min",
+    "calories": "220",
+    "image": "https://cdn.pixabay.com/photo/2022/04/10/10/51/poha-7123148_960_720.jpg",
+    "description": "Fluffy eggs with bell peppers, onions and cheese."
+  },
+  {
+    "name": "Avocado Toast",
+    "time": "10 min",
+    "calories": "200",
+    "image": "https://cdn.pixabay.com/photo/2024/06/06/11/53/ai-generated-8812587_960_720.jpg",
+    "description": "Crispy toast topped with mashed avocado and spices."
+  }
+]
