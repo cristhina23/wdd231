@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Diet - Preferencias de Dieta</title>
+    <meta name="description" content="Envía tus preferencias dietéticas para recibir recomendaciones personalizadas en Perfect Diet.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Perfect Diet</h1>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir/Cerrar menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html#recipes">Recetas</a></li>
+                    <li><a href="index.html#stats">Estadísticas de Salud</a></li>
+                    <li><a href="form.html">Preferencias de Dieta</a></li>
+                    <li><a href="index.html#about">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section container animate-on-scroll">
+            <h2>Cuéntanos tus Preferencias de Dieta</h2>
+            <p>Ayúdanos a entender tus necesidades y metas dietéticas para que podamos ofrecerte mejores recomendaciones.</p>
+            <form id="diet-preference-form" class="diet-form">
+                <div class="form-group">
+                    <label for="name">Tu Nombre:</label>
+                    <input type="text" id="name" name="name" required aria-required="true" placeholder="Ej. Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="email">Tu Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="ejemplo@dominio.com">
+                </div>
+                <div class="form-group">
+                    <label for="goal">¿Cuál es tu objetivo dietético principal?</label>
+                    <select id="goal" name="goal" required aria-required="true">
+                        <option value="">--Selecciona un Objetivo--</option>
+                        <option value="lose-weight">Perder Peso</option>
+                        <option value="gain-muscle">Ganar Masa Muscular</option>
+                        <option value="healthy-eating">Comer Saludablemente en General</option>
+                        <option value="maintain-weight">Mantener Peso</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Restricciones/Preferencias Dietéticas:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="vegetarian" name="restrictions" value="vegetarian">
+                        <label for="vegetarian">Vegetariano</label>
+
+                        <input type="checkbox" id="vegan" name="restrictions" value="vegan">
+                        <label for="vegan">Vegano</label>
+
+                        <input type="checkbox" id="gluten-free" name="restrictions" value="gluten-free">
+                        <label for="gluten-free">Sin Gluten</label>
+
+                        <input type="checkbox" id="dairy-free" name="restrictions" value="dairy-free">
+                        <label for="dairy-free">Sin Lácteos</label>
+
+                        <input type="checkbox" id="nut-allergy" name="restrictions" value="nut-allergy">
+                        <label for="nut-allergy">Alergia a Frutos Secos</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">¿Algún otro comentario?</label>
+                    <textarea id="comments" name="comments" rows="5" placeholder="Escribe aquí cualquier otra información relevante..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Preferencias</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year-form"></span> Perfect Diet. Todos los derechos reservados.</p>
+            <p>Última Modificación: <span id="last-modified-form"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

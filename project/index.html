@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Diet - Come Más Sano, Vive Mejor</title>
+    <meta name="description" content="Descubre recetas saludables y consejos para una vida mejor con Perfect Diet. Comidas deliciosas y fáciles para tus objetivos de salud.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Perfect Diet</h1>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir/Cerrar menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#recipes">Recetas</a></li>
+                    <li><a href="#stats">Estadísticas de Salud</a></li>
+                    <li><a href="form.html">Preferencias de Dieta</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section animate-on-scroll">
+            <div class="container">
+                <h2>Tu Viaje Hacia un Tú Más Saludable Comienza Aquí</h2>
+                <p>Descubre recetas deliciosas y fáciles de preparar diseñadas para un estilo de vida más sano.</p>
+                <a href="#recipes" class="btn-primary">Explorar Recetas</a>
+            </div>
+        </section>
+
+        <section id="recipes" class="recipes-section container animate-on-scroll">
+            <h3>Nuestras Recetas Deliciosas y Saludables</h3>
+            <div id="recipe-grid" class="recipe-grid">
+                </div>
+        </section>
+
+        <section id="stats" class="stats-section animate-on-scroll">
+            <div class="container">
+                <h3>Estadísticas y Consejos de Salud</h3>
+                <div id="stats-grid" class="stats-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section container animate-on-scroll">
+            <h3>Sobre Perfect Diet</h3>
+            <p>Perfect Diet se dedica a ayudarte a alcanzar tus metas de salud a través de comidas nutritivas y agradables. Creemos que la alimentación saludable debe ser sencilla, accesible y deliciosa.</p>
+            <p>Nuestras recetas seleccionadas y nuestros consejos de salud están diseñados para empoderarte a tomar decisiones informadas y vivir una vida vibrante.</p>
+        </section>
+    </main>
+
+    <div id="recipe-modal" class="modal" aria-modal="true" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="modal-content">
+            <button class="close-button" aria-label="Cerrar modal">&times;</button>
+            <img id="modal-image" src="" alt="Imagen de la Receta">
+            <h4 id="modal-title"></h4>
+            <p id="modal-description"></p>
+            <div class="modal-details">
+                <p><strong>Calorías:</strong> <span id="modal-calories"></span> kcal</p>
+                <p><strong>Tiempo de Cocción:</strong> <span id="modal-cook-time"></span> min</p>
+            </div>
+            <p id="modal-full-instructions"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Perfect Diet. Todos los derechos reservados.</p>
+            <p>Última Modificación: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
