@@ -34,26 +34,36 @@ export async function renderRecipes() {
 
 // 👉 Función para abrir el modal
 function openModal(recipe) {
-  document.getElementById('modal-image').src = recipe.image;
-  document.getElementById('modal-image').alt = recipe.name;
-  document.getElementById('modal-title').textContent = recipe.name;
-  document.getElementById('modal-time').textContent = `Time: ${recipe.time}`;
-  document.getElementById('modal-calories').textContent = `Calories: ${recipe.calories}`;
-  document.getElementById('modal-description').textContent = recipe.description;
+  const modalContent = document.getElementById('modal-body');
+  modalContent.innerHTML = ''; // Limpiar contenido anterior
+
+  const img = document.createElement('img');
+  img.src = recipe.image;
+  img.alt = recipe.name;
+ 
+
+  const title = document.createElement('h2');
+  title.textContent = recipe.name;
+
+  const time = document.createElement('p');
+  time.textContent = `Time: ${recipe.time}`;
+
+  const calories = document.createElement('p');
+  calories.textContent = `Calories: ${recipe.calories}`;
+
+  const description = document.createElement('p');
+  description.textContent = recipe.description;
+
+  modalContent.appendChild(img);
+  modalContent.appendChild(title);
+  modalContent.appendChild(time);
+  modalContent.appendChild(calories);
+  modalContent.appendChild(description);
 
   document.getElementById('recipe-modal').classList.remove('hidden');
 }
 
-// 👉 Cierra el modal
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('close-modal').addEventListener('click', () => {
-    document.getElementById('recipe-modal').classList.add('hidden');
-  });
-
-  // Cierra haciendo clic afuera
-  document.getElementById('recipe-modal').addEventListener('click', (e) => {
-    if (e.target.id === 'recipe-modal') {
-      document.getElementById('recipe-modal').classList.add('hidden');
-    }
-  });
+// 👉 Evento para cerrar el modal
+document.getElementById('close-modal').addEventListener('click', () => {
+  document.getElementById('recipe-modal').classList.add('hidden');
 });
