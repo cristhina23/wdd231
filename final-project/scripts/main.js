@@ -28,25 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollAnimations();
   renderStats();
   renderRecipes();
-  
-
-  const form = document.getElementById('diet-form');
-
-if (form) {
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const dataObject = {};
-
-    formData.forEach((value, key) => {
-      dataObject[key] = value;
-    });
-
-    localStorage.setItem('userDietForm', JSON.stringify(dataObject));
-    window.location.href = 'thankyou.html';
-  });
-}
 
 });
 

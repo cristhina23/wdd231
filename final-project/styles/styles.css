@@ -364,58 +364,6 @@ p {
   object-fit: cover;
   border-radius: 8px;
 }
-.about {
-  padding: 4rem 1rem;
-  background-color: var(--fondo);
-  font-family: var(--body-font);
-}
-.about.container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-}
-.about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-dark);
-  text-align: center;
-  font-family: var(--heading-font);
-}
-.about.intro {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: var(--main-color);
-  text-align: center;
-}
-.about span {
-  color: var(--main-color);
-  font-weight: bold;
-}
-.about p {
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
-  font-size: 1.05rem;
-  color: var(--text-medium);
-}
-.about.thanks {
-  font-weight: bold;
-  color: var(--main-color);
-}
-.signature {
-  margin-top: 2rem;
-  text-align: right;
-  font-style: italic;
-  color: var(--text-dark);
-}
-.signature.name {
-  font-weight: bold;
-  color: var(--secundary-color);
-}
 @keyframes fadeInDown {
   from {
     opacity: 0;

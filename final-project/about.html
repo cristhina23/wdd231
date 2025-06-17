@@ -2,44 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="icon"
-      href="/images/favicon.png"
-      type="image/x-icon"
-    />
-   
-    <meta
-      property="og:title"
-      content="Perfect Diet - Create Your Personalized Diet in Minutes"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <meta property="og:title" content="Perfect Diet - Create Your Personalized Diet in Minutes" />
     <meta
       property="og:description"
       content="Discover healthy, personalized diet plans tailored to your goals. Start your journey to better health today with Perfect Diet!"
     />
-    <meta
-      property="og:image"
-      content="https://tusitio.com/images/hero.png"
-    />
-    <meta
-      property="og:url"
-      content="https://tusitio.com/"
-    />
+    <meta property="og:image" content="https://tusitio.com/images/hero.png" />
+    <meta property="og:url" content="https://tusitio.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Perfect Diet" />
     <title>Perfect Diet</title>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Joan&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -47,21 +24,18 @@
 
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
   </head>
   <body>
     <div class="container">
       <header>
-         <figure>
-        <a href="index.html"><img src="images/logo.jpg" alt=""></a>
-       </figure>
+        <figure>
+          <a href="index.html"><img src="images/logo.jpg" alt="" /></a>
+        </figure>
         <input type="checkbox" id="lanzador" />
 
-        <label
-          aria-label="open menu"
-          for="lanzador"
-          class="menu-activador"
-        >
+        <label aria-label="open menu" for="lanzador" class="menu-activador">
           <span class="menu-activador-linea"></span>
           <span class="menu-activador-linea"></span>
           <span class="menu-activador-linea"></span>
@@ -69,32 +43,15 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li
-              ><a href="about.html" class="active"
-                >About Us</a
-              ></li>
-            
+            <li><a href="about.html" class="active">About Us</a></li>
+
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="form.html">Start Now</a></li>
           </ul>
         </nav>
         <div class="user">
-          <div class="user-picture">
-            <i
-              ><box-icon
-                type="solid"
-                color="#178606"
-                name="user"
-              ></box-icon
-            ></i>
-          </div>
           <div class="arrow">
-            <i
-              ><box-icon
-                color="#178606"
-                name="chevron-down"
-              ></box-icon
-            ></i>
+            <img src="images/down.png" alt="see more options" />
           </div>
         </div>
         <div class="user-options">
@@ -107,74 +64,86 @@
         </div>
       </header>
       <main>
-        <section class="about">
+        <section class="about-modern">
           <div class="container">
-            <h1>About Us</h1>
-            <p class="intro"
-              >Welcome to <span>Perfect Diet</span> 🥗✨</p
-            >
+            <h1 class="title">Discover Perfect Diet</h1>
 
-            <p
-              >I'm <strong>Cristhina Chacón</strong>, the
-              mind (and heart) behind <em>Perfect Diet</em>.
-              As someone passionate about wellness and
-              technology, I decided to combine both worlds
-              to help you eat healthier with zero stress.</p
-            >
-
-            <p
-              >At <strong>Perfect Diet</strong>, we use
-              <strong>artificial intelligence</strong> to
-              automatically create meal plans fully tailored
-              to your tastes, needs, and goals. No more
-              wasting time figuring out what to eat or
-              following generic diets that don’t work. Your
-              plan is unique—just like you.</p
-            >
-
-            <p
-              >My mission is simple: to make healthy eating
-              easy, quick, and realistic. Because we all
-              deserve to feel better and live well.</p
-            >
-
-            <p class="thanks"
-              >Thank you for trusting me (and technology!)
-              on your wellness journey. 💚</p
-            >
-
-            <div class="signature">
-              <p>With love,</p>
-              <p class="name">Cristhina Chacón</p>
+            <div class="hero-about">
+              <div class="hero-text">
+                <h2 class="fade-in">Hi, I'm <span class="highlight">Cristhina Chacón</span></h2>
+                <p class="fade-in delay-1"
+                  >Founder of <strong>Perfect Diet</strong>. I'm passionate about blending wellness and technology to
+                  transform lives with healthy habits and smart food choices.</p
+                >
+                <p class="fade-in delay-2"
+                  >Our AI-powered platform crafts personalized diet plans designed just for <em>you</em>. No stress. No
+                  diets that don't fit. Just real food for real results.</p
+                >
+              </div>
+              <div class="hero-img slide-in-right">
+                <img src="images/author.jpg" alt="Cristhina Founder" loading="lazy" />
+              </div>
             </div>
+
+            <div class="features">
+              <div class="feature-card pop-in">
+                <img src="images/cerebro.png" alt="AI Nutrition" />
+                <h3>AI Personalized</h3>
+                <p>Every meal is tailored to your body, lifestyle and preferences with smart AI.</p>
+              </div>
+              <div class="feature-card pop-in delay-1">
+                <img src="images/lista-de-verificacion.png" alt="Easy Tracking" />
+                <h3>Track Easily</h3>
+                <p>Stay motivated with smart tracking tools and instant recommendations.</p>
+              </div>
+              <div class="feature-card pop-in delay-2">
+                <img src="images/abrazo.png" alt="Community" />
+                <h3>Feel Supported</h3>
+                <p>Join a growing community who shares your goals and lifts you up.</p>
+              </div>
+            </div>
+
+            <div class="testimonial fade-in delay-3">
+              <blockquote
+                >“Perfect Diet is more than a platform, it's a movement toward a healthier, happier life.”</blockquote
+              >
+              <cite>— Cristhina Chacón</cite>
+            </div>
+
+            <div class="cta-banner slide-in-up">
+              <h3 class="white">Ready to change your life?</h3>
+              <a href="form.html" class="btn-start">Start Your Plan</a>
+            </div>
+          </div>
+        </section>
+        <section class="newsletter">
+          <div class="newsletter-container">
+            <div class="newsletter-text">
+              <h3>Newsletter</h3>
+              <h2>Subscribe to our newsletter</h2>
+              <p>Receive exclusive offers, tips, and updates straight to your inbox.</p>
+            </div>
+            <form class="newsletter-form" onsubmit="return validateEmail(event)">
+              <input type="email" placeholder="Enter your email" required />
+              <button class="button" aria-label="Subscribe to our newsletter">SUSCRIBE</button>
+              <p id="email-error" class="error-message"></p>
+            </form>
           </div>
         </section>
       </main>
 
       <footer class="footer">
         <div class="footer-top">
-          <div class="footer-section ">
+          <div class="footer-section">
             <div class="logo">
-              <a href="index.html"
-                ><img
-                  src="images/favicon.png"
-                  alt="Perfect Diet Logo" loading="lazy" 
-              /></a>
-              <p
-                >Empowering your lifestyle with quality,
-                style, and care. Thank you for being part of
-                our community.</p
-              >
+              <a href="index.html"><img src="images/favicon.png" alt="Perfect Diet Logo" loading="lazy" /></a>
+              <p>Empowering your lifestyle with quality, style, and care. Thank you for being part of our community.</p>
             </div>
             <div class="social-icons">
-              <a href="#"
-                ><img src="images/facebook.png" alt=""></a>
-              <a href="#"
-                ><img src="images/instagram.png" alt=""></a>
-               <a href="#"
-                ><img src="images/twitter.png" alt="logo de twitter"></a>
-              <a href="#"
-                ><img src="images/linkedin.png" alt=""></a>
+              <a href="#"><img src="images/facebook.png" alt="" /></a>
+              <a href="#"><img src="images/instagram.png" alt="" /></a>
+              <a href="#"><img src="images/twitter.png" alt="logo de twitter" /></a>
+              <a href="#"><img src="images/linkedin.png" alt="" /></a>
             </div>
           </div>
 
@@ -193,7 +162,6 @@
             <h4>Contact Info</h4>
 
             <div class="contact-item">
-             
               <div>
                 <span>Our location:</span>
                 <p>Goldschmidtstraße 13, 04103 Leipzig</p>
@@ -201,7 +169,6 @@
             </div>
 
             <div class="contact-item">
-              
               <div>
                 <span>Phones:</span>
                 <p>+49078-039-23-11</p>
@@ -214,19 +181,13 @@
         <div class="footer-bottom">
           <div class="bottom">
             <p>WDD 231 Final Project </p>
-            <p>
-              &copy;2025 all rights reserved ✨ Viszelle
-              Chacon ✨ Venezuela</p
-            >
+            <p> &copy;2025 all rights reserved ✨ Viszelle Chacon ✨ Venezuela</p>
             <br />
           </div>
-          <p
-            >Last Updated: <span id="last-updated"></span
-          ></p>
+          <p>Last Updated: <span id="last-updated"></span></p>
         </div>
       </footer>
     </div>
-
 
     <script src="script.js"></script>
   </body>

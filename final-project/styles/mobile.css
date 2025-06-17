@@ -91,7 +91,7 @@
   .hero-text {
     width: 80%;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
     padding: 20px;
     row-gap: 10px;
   }
@@ -200,6 +200,40 @@
   .footer-top {
     flex-direction: column;
   }
+  .about-modern .container .title{
+    font-size: 24px;
+  }
+   .about-modern .container h2 {
+    font-size: 18px;
+   }
+   .about-modern .container p {
+    font-size: 14px;
+   }
+   .about-modern .container blockquote {
+    font-size: 14px;
+   }
+   .about-modern .container .feature-card {
+    width: 100%;
+   }
+   .about-modern .container .hero-img {
+    margin: 0 auto;
+   }
+   .about-modern .container .feature-card img {
+    width: 50px;
+    margin: 0 auto;
+   }
+   .about-modern .container .feature-card h3 {
+    font-size: 18px;
+   }
+   .about-modern .container .feature-card p {
+    font-size: 14px;
+   }
+   .about-modern .container .cta-banner h3 {
+    font-size: 18px;
+   }
+   .about-modern .container .cta-banner .btn-start {
+    font-size: 14px;
+   }
 }
 .recipes-container {
   width: 80%;
