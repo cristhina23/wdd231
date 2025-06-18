@@ -1,6 +1,6 @@
 export async function renderRecipes() {
   try {
-    const response = await fetch('./scripts/recipes.json'); // Ajusta si tu ruta es diferente
+    const response = await fetch('./scripts/recipes.json'); 
     if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
 
     const recipes = await response.json();
@@ -19,7 +19,7 @@ export async function renderRecipes() {
         <p>${recipe.description}</p>
       `;
 
-      // 👉 Evento para abrir el modal
+     
       card.addEventListener('click', () => openModal(recipe));
 
       container.appendChild(card);
@@ -32,10 +32,10 @@ export async function renderRecipes() {
   }
 }
 
-// 👉 Función para abrir el modal
+
 function openModal(recipe) {
   const modalContent = document.getElementById('modal-body');
-  modalContent.innerHTML = ''; // Limpiar contenido anterior
+  modalContent.innerHTML = ''; 
 
   const img = document.createElement('img');
   img.src = recipe.image;
@@ -64,7 +64,7 @@ function openModal(recipe) {
   document.getElementById('recipe-modal').classList.remove('hidden');
 }
 
-// 👉 Evento para cerrar el modal
+
 document.getElementById('close-modal').addEventListener('click', () => {
   document.getElementById('recipe-modal').classList.add('hidden');
 });

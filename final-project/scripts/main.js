@@ -1,5 +1,7 @@
 const arrow = document.querySelector(".arrow");
 const userOptions = document.querySelector(".user-options");
+const checkbox = document.getElementById("lanzador");
+const nav = document.querySelector("nav");
 import { renderStats } from "./renderStats.js";
 import { renderRecipes } from "./renderRecipes.js";
 
@@ -15,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show'); // Aplica a cada imagen visible
-        observer.unobserve(entry.target); // Opcional: evitar reanimar
+        entry.target.classList.add('show'); 
+        observer.unobserve(entry.target); 
       }
     });
   }, {
@@ -29,6 +31,30 @@ document.addEventListener('DOMContentLoaded', () => {
   renderStats();
   renderRecipes();
 
+  const savedUserOptions = localStorage.getItem("userOptionsOpen");
+  if (savedUserOptions === "true") {
+    userOptions.classList.add("active");
+  }
+
+  const isMenuOpen = localStorage.getItem("menuAbierto");
+
+
+  if (isMenuOpen === "true") {
+  checkbox.checked = true;
+  nav.classList.add("active");
+  }
+
+
+  checkbox.addEventListener("change", () => {
+  if (checkbox.checked) {
+    nav.classList.add("active");
+    localStorage.setItem("menuAbierto", "true");
+  } else {
+    nav.classList.remove("active");
+    localStorage.setItem("menuAbierto", "false");
+  }
+  });
+
 });
 
 
@@ -37,8 +63,7 @@ const lastModified = document.lastModified;
 
 document.getElementById("last-updated").textContent = `Last modified: ${lastModified}`;
 
-const checkbox = document.getElementById("lanzador");
-const nav = document.querySelector("nav");
+
 
 checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
