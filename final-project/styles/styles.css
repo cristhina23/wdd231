@@ -546,3 +546,8 @@ p {
     transform: scale(1);
   }
 }
+.link {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
